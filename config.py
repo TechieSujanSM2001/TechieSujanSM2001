@@ -6,6 +6,6 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     # Secret key for session management (replace with a secure, random key)
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'your_secret_key_here'
 
     # Other configurations...
